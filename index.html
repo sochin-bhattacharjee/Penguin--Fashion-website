@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+                }
+            }
+        }
+    }
+    </script>
     <style>
         /* Roboto-font */
         @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -21,16 +32,20 @@
 <body class="Roboto-font">
     <header class="bg-[#FFFBF0]">
         <!-- navigation section start -->
+        
+        <!-- navigation main parent div -->
         <nav class="w-[85%] mx-auto flex justify-between justify-center items-center py-[2%]">
+            <!-- navigation chid div left-side content tittle and logo -->
             <div>
                 <img class="w-[40vw] md:w-[30vw]" src="./icons/logo.png" alt="">
             </div>
+            <!-- navigation chid div right-side content ankor list -->
             <div class="flex gap-[3vw]">
                 <a class="hidden md:block text-[1.5vw]" href="">Home</a>
                 <a class="hidden md:block text-[1.5vw]" href="">Product</a>
                 <a class="hidden md:block text-[1.5vw]" href="">About us</a>
                 <a class="hidden md:block text-[1.5vw]" href="">Contact us</a>
-
+                <!-- navigation 3 line icons -->
                 <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                     <path d="M5 16.25C5.69036 16.25 6.25 15.6904 6.25 15C6.25 14.3096 5.69036 13.75 5 13.75C4.30964 13.75 3.75 14.3096 3.75 15C3.75 15.6904 4.30964 16.25 5 16.25Z" fill="black"/>
                     <path d="M25.075 13.75H9.925C9.27607 13.75 8.75 14.2761 8.75 14.925V15.075C8.75 15.7239 9.27607 16.25 9.925 16.25H25.075C25.7239 16.25 26.25 15.7239 26.25 15.075V14.925C26.25 14.2761 25.7239 13.75 25.075 13.75Z" fill="black"/>
@@ -42,21 +57,25 @@
         <!-- navigation section end -->
 
         <!-- banner section start -->
+        <!-- banner section main parent div -->
         <section class="w-[85%] mx-auto flex gap-[10px] md:gap-[25px] flex-col md:flex-row justify-center items-center pb-[30px] 2xl:pb-[150px]">
+            <!-- banner section chid div left-side content heading , paragraph and button -->
             <div>
                 <h1 class="Bebas-font text-[40px] sm:text-[7vw] md:text-[4.3vw] lg:text-[4.3vw] font-semibold"><span class="text-[#FABE4C] ">BE THE PENGUINS</span> <br> OF WINTER</h1>
                 <p class="text-[3vw] text-[#3E3E3E] md:text-[2vw] lg:text-[1.5vw] 2xl:text-[30px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, doloremque?</p>
 
-                <button class="bg-gradient-to-b from-green-700 to-green-800 mt-[20px] flex justify-center items-center text-white text-[3.2vw] md:text-[2vw] lg:text-[1.5vw] px-[10px] py-[5px] rounded-[5px]">
-                    <img class="w-[6vw] md:w-[3vw]" src="./icons/shopping-cart 1.png" alt="">
+                <button class="bg-gradient-to-b from-green-700 to-green-800 mt-[20px] flex justify-center items-center text-white text-[3.2vw] sm:text-[2vw] md:text-[2vw] lg:text-[1.5vw] px-[10px] py-[5px] rounded-[5px]">
+                    <img class="w-[6vw] sm:w-[4vw] md:w-[3vw]" src="./icons/shopping-cart 1.png" alt="">
                     Buy Now
                 </button>
             </div>
+            <!-- banner section child div right-side content image -->
             <div>
                 <img class="w-[70vw] md:w-[60vw] lg:w-[40vw] 2xl:w-[40vw]" src="./images/model.png" alt="">
             </div>
         </section>
-    </header>
+        </header>
+        <!-- banner section end -->
     <main>
 
     </main>
